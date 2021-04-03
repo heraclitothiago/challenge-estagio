@@ -21,6 +21,7 @@
     ]
   },
   "require": {
+    "twbs/bootstrap": "4.6.0.*",
     "coffeecode/paginator": "^1.0"
   }
 }
