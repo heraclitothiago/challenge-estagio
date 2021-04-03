@@ -4,8 +4,17 @@
 namespace Source\Application;
 
 
+/**
+ * Class Controller
+ * @package Source\Application
+ *
+ * @author Heráclito Thiago
+ */
 class Controller
 {
+    /**
+     * @var View
+     */
     protected $view;
 
     /**
