@@ -1,4 +1,4 @@
-<?php $v->layout("header"); ?>
+<?php $v->layout("_theme"); ?>
 
 <div class="container">
     <h1>Olá Mundo</h1>
