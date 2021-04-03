@@ -12,9 +12,9 @@ class Controller
      * Controller constructor.
      * @param $view
      */
-    public function __construct($view)
+    public function __construct(string $pathToViews = null)
     {
-        $this->view = $view;
+        $this->view = new View($pathToViews);
     }
 
 }
