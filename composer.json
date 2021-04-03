@@ -1,0 +1,26 @@
+{
+  "name": "app/estagio",
+  "description": "Desafio estagio",
+  "authors": [
+    {
+      "name": "Heraclito Thiago de Castro Santos",
+      "email": "heraclitothiago@hotmail.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Boot/Config.php",
+      "source/Boot/Helpers.php"
+    ]
+  },
+  "require": {
+    "coffeecode/paginator": "^1.0"
+  }
+}
