@@ -5,6 +5,12 @@ namespace Source\Application;
 
 use League\Plates\Engine;
 
+/**
+ * Class View
+ * @package Source\Application
+ *
+ * @author Heráclito Thiago
+ */
 class View
 {
     /** @var Engine */
