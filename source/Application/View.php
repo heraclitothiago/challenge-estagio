@@ -27,17 +27,6 @@ class View
     }
 
     /**
-     * @param string $name
-     * @param string $path
-     * @return View
-     */
-    public function path(string $name, string $path): View
-    {
-        $this->engine->addFolder($name, $path);
-        return $this;
-    }
-
-    /**
      * @param string $templateName
      * @param array $data
      * @return string
