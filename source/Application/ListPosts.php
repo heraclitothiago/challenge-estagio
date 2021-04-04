@@ -29,8 +29,7 @@ class ListPosts extends Controller
     public function home(array $data): void
     {
         //load json and covert to assoc array
-        $postList = file_get_contents(CONF_API_ADDRESS);
-        $postCollection = json_decode($postList, true);
+        $postCollection = (new ModelEmulate())->getAllPosts(($data['userId']) ?? null);
 
         //create pagination
         $pagination = new Pager(url('/post/p/'));
