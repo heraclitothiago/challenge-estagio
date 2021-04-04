@@ -18,7 +18,8 @@ class ListPosts extends Controller
      * @param array $data
      */
 
-    private function getApiData(){
+    private function getApiData()
+    {
         //load json and covert to assoc array
         $postList = file_get_contents(CONF_API_ADDRESS);
         $postCollection = json_decode($postList, true);
@@ -53,13 +54,14 @@ class ListPosts extends Controller
     /**
      * @param array $data
      */
-    public function post(array $data):void
+    public function post(array $data): void
     {
-        $post = (new ModelEmulate())->getPost($data['userId'],$data['id']);
+        $post = (new ModelEmulate())->getPost($data['userId'], $data['id']);
         echo $this->view->render("view2", [
-           'post' => $post
+            'post' => $post
         ]);
     }
+
     public function error()
     {
         $params = 'null';
