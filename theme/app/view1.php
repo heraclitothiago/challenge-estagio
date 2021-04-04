@@ -1,7 +1,7 @@
 <?php $v->layout("_theme"); ?>
 
 <div class="album py-5 bg-light">
-    <div class="container">
+    <div class="container starter-template">
         <div class="row">
             <?php
             foreach ($posts as $post) {
@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <h5 class="card-title">' .
                     "<a href='".
-                    url()
+                    url("/post/{$post['userId']}/{$post['id']}")
                     ."'>".str_limit_chars(str_title($post["title"]), 25)."</a>"
                     . '</h5>
                         <p class="card-text">' . str_limit_chars($post["body"], 115) . '</p>
