@@ -20,16 +20,12 @@ class ListPosts extends Controller
         //create pagination
         $total = count($postCollection);
 
-        $getPage = filter_input(INPUT_GET, 'page', FILTER_VALIDATE_INT);
-        var_dump($getPage);
-
         $pagination = new Pager(url('/post/p/{page}'));
         $pagination->pager($total, 6, ($data['page'] ?? 1));
 
         //render page
         echo $this->view->render("view1", [
             "posts" => $postCollection,
-            "pagination" => $pagination->render('')
         ]);
     }
 
@@ -41,6 +37,14 @@ class ListPosts extends Controller
         $post = (new ModelEmulate())->getPost($data['userId'], $data['id']);
         echo $this->view->render("view2", [
             'post' => $post
+        ]);
+    }
+
+    public function posts(array $data)
+    {
+
+        echo $this->view->render('view2',[
+            //'pagination' => $pagination
         ]);
     }
 
