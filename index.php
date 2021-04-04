@@ -11,7 +11,6 @@ $route->namespace("Source\Application");
 
 $route->group(null);
 $route->get("/", "ListPosts:home");
-$route->get("/post/p/{page}", "ListPosts:home");
 $route->get("/post/{userId}", "ListPosts:home");
 $route->get("/post/{userId}/{id}", "ListPosts:post");
 
