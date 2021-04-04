@@ -23,7 +23,6 @@
   "require": {
     "twbs/bootstrap": "4.6.0.*",
     "league/plates": "v4.0.0-alpha",
-    "coffeecode/paginator": "^1.0",
     "coffeecode/router": "^1.0",
     "ext-mbstring": "*",
     "ext-json": "*"
