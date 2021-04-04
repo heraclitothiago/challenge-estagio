@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="<?= theme("/assets/css/bootstrap.min.css"); ?>">
     <title>App List</title>
 </head>
-<style>
-    /*Prática não recomendável, entretanto o css é pequeno*/
-    .starter-template, .blog-post {
-        padding: 4rem 1.5rem;
-    }
-</style>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
