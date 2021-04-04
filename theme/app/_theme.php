@@ -10,7 +10,9 @@
     <title>App List</title>
 </head>
 <body>
+
 <?= $v->section("content"); ?>
+
 <script src="<?= theme("/assets/js/bootstrap.bundle.min.js"); ?>"></script>
 </body>
 </html>
