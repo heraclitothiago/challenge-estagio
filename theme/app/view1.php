@@ -30,6 +30,5 @@
             }
             ?>
         </div>
-        <?= $pagination; ?>
     </div>
 </div>
