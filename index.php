@@ -11,9 +11,10 @@ $route->namespace("Source\Application");
 
 $route->group(null);
 $route->get("/", "ListPosts:home");
-$route->get("/post", "ListPosts:post");
-$route->get("/{userId}", "ListPosts:home");
-$route->get("/{userId}/{id}", "ListPosts:home");
+$route->get("/posts", "ListPosts:posts");
+$route->get("/posts/p/{page}", "ListPosts:posts");
+$route->get("/posts/{userId}", "ListPosts:posts");
+$route->get("/posts/{userId}/{id}", "ListPosts:posts");
 
 
 $route->dispatch();
