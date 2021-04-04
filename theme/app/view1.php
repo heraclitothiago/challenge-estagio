@@ -17,7 +17,7 @@
                         . '</h5>
                         <p class="card-text">' . str_limit_chars($post["body"], 115) . '</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <small class="text-muted"><a href="' . url($post['userId']) . '">por userId ' .
+                            <small class="text-muted"><a href="' . url("post/".$post['userId']) . '">por userId ' .
                         $post["userId"] . '</small >
                         </div >
                     </div >
@@ -25,6 +25,8 @@
             </div >
     ';
                 }
+            } else {
+                echo "<h1>Nada encontrado aqui</h1>";
             }
             ?>
         </div>
