@@ -13,7 +13,6 @@ $route->group(null);
 $route->get("/", "ListPosts:home");
 $route->get("/post", "ListPosts:posts");
 $route->get("/post/p/{page}", "ListPosts:posts");
-$route->get("/post/{userId}", "ListPosts:posts");
 $route->get("/post/{userId}/{id}", "ListPosts:post");
 
 
