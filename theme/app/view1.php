@@ -21,7 +21,7 @@
 POST;
             }
             ?>
-
+            <?= $pagination; ?>
         </div>
     </div>
 </div>
