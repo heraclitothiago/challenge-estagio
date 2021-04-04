@@ -1,6 +1,3 @@
-<?php
-var_dump($post);
-?>
 <?php $v->layout("_theme"); ?>
 
 <div class="container">

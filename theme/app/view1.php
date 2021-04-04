@@ -16,7 +16,6 @@
                     . '</h5>
                         <p class="card-text">' . str_limit_chars($post["body"], 115) . '</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <a href="#" class="card-link">Card link</a>
                             <small class="text-muted">por userId ' .
                     $post["userId"] . '</small >
                         </div >
