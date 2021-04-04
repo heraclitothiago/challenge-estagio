@@ -3,6 +3,7 @@
 
 namespace Source\Application;
 
+use Source\Application\ModelEmulate;
 
 class ListPosts extends Controller
 {
@@ -49,6 +50,16 @@ class ListPosts extends Controller
         ]);
     }
 
+    /**
+     * @param array $data
+     */
+    public function post(array $data):void
+    {
+        $post = (new ModelEmulate())->getPost($data['userId'],$data['id']);
+        echo $this->view->render("view2", [
+           'post' => $post
+        ]);
+    }
     public function error()
     {
         $params = 'null';
