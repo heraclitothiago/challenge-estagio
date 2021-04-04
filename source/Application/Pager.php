@@ -194,7 +194,7 @@ class Pager
     public function firstPage(bool $fixedFirstAndLastPage = true): ?string
     {
         if ($fixedFirstAndLastPage || $this->page != 1) {
-            $tags = "\n<ul class='pagination'>\n";
+            $tags = "\n<ul class='pagination justify-content-center'>\n";
             $tags .= "<li class='page-item'>";
             $tags .= "<a class='{$this->class}page-link' title=\"{$this->first[0]}\" href=\"{$this->link}1{$this->hash}{$this->params}\">{$this->first[1]}</a>";
             $tags .= "</li>\n";
@@ -207,11 +207,12 @@ class Pager
      * @param bool $fixedFirstAndLastPage
      * @return string|null
      */
-    public function lastPage(bool $fixedFirstAndLastPage = true): ?string
+    public function lastPage(bool $fixedFirstAndLastPage = false): ?string
     {
         if ($fixedFirstAndLastPage || $this->page != $this->pages) {
-            $tag = "\n<li class='page-item'";
-            $tag .= "<a class='{$this->class}page-link' title=\"{$this->last[0]}\" href=\"{$this->link}{$this->pages}{$this->hash}{$this->params}\">{$this->last[1]}</a>";
+            $tag = "\n<li class='page-item'>";
+            $tag .= "<a class='page-link' title=\"{$this->last[0]}\" href=\"{$this->link}{$this->pages}{$this->hash}{$this->params}>"
+                . '"' . "{$this->last[1]}</a>";
             $tag .= "</li>\n";
             $tag .= "</ul>\n";
             return $tag;
