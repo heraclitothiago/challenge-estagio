@@ -37,7 +37,7 @@ class ModelEmulate
         if (!is_int($userId) || !is_int($postId)){
             return "UserId e Post Id devem ser números inteiros";
         }
-        return $this->getAllPosts($userId)[$postId];
+        return $this->getAllPosts($userId)[$postId - 1];
     }
 
 }
